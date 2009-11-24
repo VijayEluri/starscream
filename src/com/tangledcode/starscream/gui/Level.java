@@ -1,7 +1,9 @@
-package com.tangledcode.starscream;
+package com.tangledcode.starscream.gui;
+
+import com.tangledcode.starscream.entities.Updatable;
 
 
-public class Level {
+public class Level implements Drawable, Updatable {
     private Layer background;
     private Layer enemies;
     private Layer effects;
@@ -31,12 +33,12 @@ public class Level {
         // @todo let player collide with bullets
     }
 
-    public void render() {
-        this.background.render();
-        this.enemies.render();
-        this.effects.render();
-        this.player.render();
-        this.forground.render();
+    public void draw() {
+        this.background.draw();
+        this.enemies.draw();
+        this.effects.draw();
+        this.player.draw();
+        this.forground.draw();
     }
 
 }

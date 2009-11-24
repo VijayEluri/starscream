@@ -1,6 +1,5 @@
 package com.tangledcode.starscream;
 
-import com.tangledcode.starscream.gui.Application;
 
 
 public class Main {

@@ -1,11 +1,12 @@
-package com.tangledcode.starscream;
+package com.tangledcode.starscream.gui;
 
 import java.util.Vector;
 
 import com.tangledcode.starscream.entities.Entity;
+import com.tangledcode.starscream.entities.Updatable;
 
 
-public class Layer {
+public class Layer implements Drawable, Updatable {
     private Vector<Entity> entities;
     
     public Layer() {
@@ -26,7 +27,7 @@ public class Layer {
         }
     }
 
-    public void render() {
+    public void draw() {
         for(Entity entity : this.entities) {
             entity.draw();
         }
