@@ -1,7 +1,1 @@
 h2. starscream
-
-My gaming dev reel.
-
-h2. Authors
-
-* Daniel Malone <daniel.malone@gmx.de>
